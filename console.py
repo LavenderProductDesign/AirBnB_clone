@@ -19,8 +19,38 @@ class HBNCommand(cmd.Cmd):
         return True
 
     def emptyline(self):
-        """Empty line"""
+        """Calls promt with empty line + ENTER"""
         return
+
+    def do_create(self, line):
+        """Created new instance of BaseModel, saves it(to JSON file)
+           and prints the id
+        """
+        pass
+
+    def do_show(self, line):
+        """Print the string representation of an instance based on the
+           class name and id.
+        """
+        pass
+
+    def do_destroy(self, line):
+        """Deletes an instance based on the class name and id (save the
+        change into the JSON file)
+        """
+        pass
+
+    def do_all(self, line):
+        """Prints all string representation of all instanced based or not
+           on the class name.
+        """
+        pass
+
+    def do_update(self, line):
+        """Updates an instance based on the class name and id by adding or
+           updating attribute (save the change into the JSON file).
+        """
+        pass
 
 
 if __name__ == '__main__':
